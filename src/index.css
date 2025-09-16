@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+body {
+  background-color: #f7f7f7; /* A very light gray-blue that's close to white */
+  overflow-x: hidden;
+}
+
+/* Hero section responsive height */
+@media (min-width: 1024px) {
+  .hero-desktop-height {
+    height: 85vh !important;
+  }
+}
