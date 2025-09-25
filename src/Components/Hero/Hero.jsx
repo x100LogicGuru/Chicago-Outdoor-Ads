@@ -46,7 +46,7 @@ export default function Hero() {
             <p className="text-[1.1rem]  text-left">Chicago, IL 60614</p>
             <p className="text-[1.1rem] pb-10">777-898-8977</p>
 
-            <button className="text-black bg-white items-center rounded-xl px-8 py-4 flex flex-col justify-center text-center w-full">
+            <button className="text-black font-nono bg-white items-center rounded-xl px-8 py-4 flex flex-col justify-center text-center w-full">
               Learn More
             </button>
           </div>

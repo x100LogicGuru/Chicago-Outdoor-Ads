@@ -10,7 +10,7 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className="w-full lg:mt-3 lg:rounded-2xl lg:w-[95%] shadow-xl fixed bg-white top-0 left-0 lg:left-1/2 lg:transform lg:-translate-x-1/2 px-4 lg:px-10 py-4 lg:py-5 flex items-center justify-between z-50 rounded-b-2xl">
+      <nav className="w-full lg:mt-3  lg:rounded-2xl lg:w-[95%] shadow-xl fixed bg-white top-0 left-0 lg:left-1/2 lg:transform lg:-translate-x-1/2 px-4 lg:px-10 py-4 lg:py-5 flex items-center justify-between z-50 rounded-b-2xl">
         {/* Mobile Logo - Left side */}
         <h1 className="text-2xl font-light lg:hidden">HH</h1>
 
