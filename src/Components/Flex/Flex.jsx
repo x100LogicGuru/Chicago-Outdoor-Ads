@@ -32,7 +32,7 @@ const statistics = [
 
 export default function Flex() {
   return (
-    <div className="flex w-[95%] h-[20vh] justify-between items-center mx-auto mt-1 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-[95%] min-h-[20vh] justify-between items-center mx-auto mt-1 gap-4 sm:gap-6">
       {statistics.map((stat, index) => (
         <StatCard
           key={index}

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { MdKeyboardArrowDown, MdMenu, MdClose } from "react-icons/md";
+import ContactForm from "../ContactForm/ContactForm";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -38,7 +40,10 @@ export default function Navigation() {
           <button className="text-sm px-4 py-2 border-1 rounded-xl flex items-center gap-1 hover:cursor-pointer hover:bg-gray-50 transition-colors">
             Advertising <MdKeyboardArrowDown />
           </button>
-          <button className="text-white bg-black px-4 py-2 border-1 rounded-xl hover:cursor-pointer hover:animate-bounce">
+          <button
+            onClick={() => setIsContactFormOpen(true)}
+            className="text-white bg-black px-4 py-2 border-1 rounded-xl hover:cursor-pointer hover:animate-bounce"
+          >
             Get in touch
           </button>
         </div>
@@ -116,12 +121,24 @@ export default function Navigation() {
             <button className="w-full text-sm px-4 py-3 border-1 rounded-xl flex items-center justify-center gap-1 hover:bg-gray-50 transition-colors">
               Advertising <MdKeyboardArrowDown />
             </button>
-            <button className="w-full text-white bg-black px-4 py-3 border-1 rounded-xl hover:cursor-pointer hover:animate-bounce">
+            <button
+              onClick={() => {
+                setIsContactFormOpen(true);
+                setIsMenuOpen(false);
+              }}
+              className="w-full text-white bg-black px-4 py-3 border-1 rounded-xl hover:cursor-pointer hover:animate-bounce"
+            >
               Get in touch
             </button>
           </div>
         </div>
       </div>
+
+      {/* Contact Form Modal */}
+      <ContactForm
+        isOpen={isContactFormOpen}
+        onClose={() => setIsContactFormOpen(false)}
+      />
     </>
   );
 }

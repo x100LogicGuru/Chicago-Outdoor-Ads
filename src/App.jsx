@@ -7,9 +7,13 @@ import SubSec from "./Components/SubSec/SubSec.jsx";
 import Flex from "./Components/Flex/Flex.jsx";
 import ImgSec from "./Components/ImgSec/ImgSec.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
+import ErrorBoundary from "./Components/ErrorBoundary/ErrorBoundary.jsx";
+import Analytics from "./Components/Analytics/Analytics.jsx";
+
 function App() {
   return (
-    <>
+    <ErrorBoundary>
+      <Analytics />
       <Navigation />
       <Hero />
       <Products />
@@ -18,7 +22,7 @@ function App() {
       <Flex />
       <ImgSec />
       <Footer />
-    </>
+    </ErrorBoundary>
   );
 }
 

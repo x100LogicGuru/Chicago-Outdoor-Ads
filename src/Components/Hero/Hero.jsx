@@ -1,9 +1,11 @@
+import heroImage from "../../assets/images/gael-d-E3vYFft6aS4-unsplash.jpg";
+
 export default function Hero() {
   return (
     <div
       className="w-full lg:w-[95%] h-screen lg:rounded-3xl lg:mt-30 bg-cover bg-center bg-no-repeat relative lg:left-1/2 lg:transform lg:-translate-x-1/2 hero-desktop-height"
       style={{
-        backgroundImage: "url('/images/gael-d-E3vYFft6aS4-unsplash.jpg')",
+        backgroundImage: `url(${heroImage})`,
         height: "100vh",
       }}
     >

@@ -8,21 +8,27 @@ export default function ImgSec() {
       <div className="relative overflow-hidden rounded-2xl shadow-lg">
         <img
           src={toaHeftiba1}
-          alt="Outdoor advertising display"
+          alt="Modern digital billboard display in Chicago showcasing outdoor advertising technology"
+          loading="lazy"
+          decoding="async"
           className="w-full h-[60vh] object-cover hover:scale-105 transition-transform duration-300"
         />
       </div>
       <div className="relative overflow-hidden rounded-2xl shadow-lg">
         <img
           src={toaHeftiba2}
-          alt="Outdoor advertising display"
+          alt="Transit advertising display on Chicago public transportation system"
+          loading="lazy"
+          decoding="async"
           className="w-full h-[60vh] object-cover hover:scale-105 transition-transform duration-300"
         />
       </div>
       <div className="relative overflow-hidden rounded-2xl shadow-lg">
         <img
           src={vasanth}
-          alt="Outdoor advertising display"
+          alt="Street furniture advertising display in downtown Chicago urban environment"
+          loading="lazy"
+          decoding="async"
           className="w-full h-[60vh] object-cover hover:scale-105 transition-transform duration-300"
         />
       </div>
